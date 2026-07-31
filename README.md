@@ -108,12 +108,12 @@ Tech: Next.js, TypeScript, Java, Spring Boot, MySQL [Code](https://github.com/Ri
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=NFahmid&show_icons=true&hide_border=true&count_private=true&title_color=7CFFB2&icon_color=52B788&text_color=D9F2E4&bg_color=0D3327&border_color=1B4332" alt="GitHub Stats" height="165"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=NFahmid&hide_border=true&background=0D3327&ring=52B788&fire=7CFFB2&currStreakLabel=D9F2E4&sideNums=D9F2E4&sideLabels=D9F2E4&dates=8FE3B5&border=1B4332" alt="GitHub Streak" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api?username=NFahmid&show_icons=true&hide_border=true&count_private=true&title_color=7CFFB2&icon_color=7CFFB2&text_color=D9F2E4&bg_color=0D3327&border_color=2D6A4F" alt="GitHub Stats" height="165"/>
+<img src="https://streak-stats.demolab.com?user=NFahmid&hide_border=true&background=0D3327&ring=7CFFB2&fire=7CFFB2&currStreakLabel=7CFFB2&currStreakNum=D9F2E4&sideNums=D9F2E4&sideLabels=D9F2E4&dates=8FE3B5&border=2D6A4F&stroke=2D6A4F" alt="GitHub Streak" height="165"/>
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NFahmid&layout=compact&hide_border=true&langs_count=8&title_color=7CFFB2&text_color=D9F2E4&bg_color=0D3327&border_color=1B4332" alt="Top Languages" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NFahmid&layout=compact&hide_border=true&langs_count=8&title_color=7CFFB2&text_color=D9F2E4&bg_color=0D3327&border_color=2D6A4F" alt="Top Languages" height="165"/>
 
 <br/><br/>
 
