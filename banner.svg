@@ -1,0 +1,99 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08211a"/>
+      <stop offset="55%" stop-color="#0d3327"/>
+      <stop offset="100%" stop-color="#0a2b21"/>
+    </linearGradient>
+    <linearGradient id="pearlText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eafff3"/>
+      <stop offset="50%" stop-color="#d9f2e4"/>
+      <stop offset="100%" stop-color="#b9e8cd"/>
+    </linearGradient>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7CFFB2" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7CFFB2" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+    <clipPath id="frame">
+      <rect x="0" y="0" width="1200" height="260" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="260" fill="url(#bgGrad)"/>
+
+    <!-- faint grid -->
+    <g stroke="#8CE8B6" stroke-opacity="0.06" stroke-width="1">
+      <path d="M0 40 H1200 M0 90 H1200 M0 140 H1200 M0 190 H1200 M0 240 H1200"/>
+      <path d="M100 0 V260 M240 0 V260 M420 0 V260 M600 0 V260 M780 0 V260 M960 0 V260 M1100 0 V260"/>
+    </g>
+
+    <!-- constellation network, drifting -->
+    <g stroke="#9FF3C4" stroke-opacity="0.35" stroke-width="1" fill="none">
+      <path d="M60,210 L180,150 L300,190 L420,120 L560,170" >
+        <animate attributeName="stroke-opacity" values="0.15;0.45;0.15" dur="6s" repeatCount="indefinite"/>
+      </path>
+      <path d="M840,60 L940,110 L1040,70 L1140,100">
+        <animate attributeName="stroke-opacity" values="0.4;0.15;0.4" dur="7s" repeatCount="indefinite"/>
+      </path>
+      <path d="M700,200 L800,230 L900,205">
+        <animate attributeName="stroke-opacity" values="0.2;0.4;0.2" dur="5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <g>
+      <circle cx="60" cy="210" r="2.4" fill="#B9FFD8"/>
+      <circle cx="180" cy="150" r="3" fill="#7CFFB2"/>
+      <circle cx="300" cy="190" r="2" fill="#B9FFD8"/>
+      <circle cx="420" cy="120" r="2.6" fill="#7CFFB2"/>
+      <circle cx="560" cy="170" r="2" fill="#B9FFD8"/>
+      <circle cx="840" cy="60" r="2.4" fill="#7CFFB2"/>
+      <circle cx="940" cy="110" r="2" fill="#B9FFD8"/>
+      <circle cx="1040" cy="70" r="2.8" fill="#7CFFB2"/>
+      <circle cx="1140" cy="100" r="2" fill="#B9FFD8"/>
+      <circle cx="700" cy="200" r="2" fill="#B9FFD8"/>
+      <circle cx="800" cy="230" r="2.6" fill="#7CFFB2"/>
+      <circle cx="900" cy="205" r="2" fill="#B9FFD8"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 6 -4; 0 0" dur="9s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- pulsing glow node behind title -->
+    <circle cx="150" cy="90" r="70" fill="url(#nodeGlow)" opacity="0.5">
+      <animate attributeName="r" values="60;78;60" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.35;0.55;0.35" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- corner accent brackets -->
+    <g stroke="#7CFFB2" stroke-width="2" stroke-opacity="0.8" fill="none">
+      <path d="M18,18 L18,50 M18,18 L50,18"/>
+      <path d="M1182,242 L1182,210 M1182,242 L1150,242"/>
+    </g>
+
+    <!-- prompt marker -->
+    <text x="64" y="78" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#7CFFB2" opacity="0.85">~/nuren</text>
+    <circle cx="150" cy="73" r="3" fill="#7CFFB2">
+      <animate attributeName="opacity" values="1;0.15;1" dur="1.3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- main title -->
+    <text x="60" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="url(#pearlText)" letter-spacing="1">NUREN FAHMID</text>
+
+    <!-- subtitle -->
+    <text x="62" y="175" font-family="'Segoe UI', Arial, sans-serif" font-size="19" fill="#8FE3B5" font-weight="500">software engineer · full-stack &amp; applied AI</text>
+
+    <!-- tags -->
+    <text x="62" y="205" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#bfe9cf" opacity="0.85">real-time systems  ·  RAG &amp; LLM tooling  ·  campus-scale platforms</text>
+
+    <!-- thin divider line with shimmer -->
+    <rect x="60" y="222" width="1080" height="1" fill="#7CFFB2" opacity="0.25"/>
+    <rect x="60" y="222" width="120" height="1" fill="#EAFFF3" opacity="0.9">
+      <animate attributeName="x" values="60;1020;60" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- frame border -->
+  <rect x="1" y="1" width="1198" height="258" rx="18" fill="none" stroke="#7CFFB2" stroke-opacity="0.4" stroke-width="1.5"/>
+</svg>
